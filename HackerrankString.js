@@ -6,7 +6,7 @@ const hackerrankInString = (s) => {
       match.shift();
     }
   }
-  
+
   if (match.length === 0) {
     return 'YES';
   }
