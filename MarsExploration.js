@@ -8,7 +8,7 @@ const marsExploration = (s) => {
     if (s[i + 1] !== 'O') {
       charCount++;
     }
-      if (s[i + 2] !== 'S') {
+    if (s[i + 2] !== 'S') {
       charCount++;
     }
   }
