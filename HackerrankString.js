@@ -1,8 +1,9 @@
+/* eslint-disable no-console */
 const hackerrankInString = (s) => {
-  let match = 'hackerrank'.split('');
+  const match = 'hackerrank'.split('');
 
-  for (const char of s) {
-    if (char === match[0]) {
+  for (let i = 0; i < s.length; i += 1) {
+    if (s[i] === match[0]) {
       match.shift();
     }
   }
@@ -12,6 +13,6 @@ const hackerrankInString = (s) => {
   }
 
   return 'NO';
-}
+};
 
-console.log(hackerrankInString('hereiamstackerrank')) // Answer = 'YES'
+console.log(hackerrankInString('hereiamstackerrank')); // Answer = 'YES'

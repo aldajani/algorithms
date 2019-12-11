@@ -1,8 +1,9 @@
+/* eslint-disable no-console */
 const gradingStudents = (grades) => {
-  let roundedGrades = [];
-  for (let i = 0; i < grades.length; i++) {
+  const roundedGrades = [];
+  for (let i = 0; i < grades.length; i += 1) {
     if (grades[i] < 38) {
-      roundedGrades.push(grades[i])
+      roundedGrades.push(grades[i]);
     } else if (grades[i] % 5 === 0) {
       roundedGrades.push(grades[i]);
     } else if ((grades[i] + 1) % 5 === 0) {
@@ -14,6 +15,6 @@ const gradingStudents = (grades) => {
     }
   }
   return roundedGrades;
-}
+};
 
-console.log(gradingStudents([73, 67, 38, 33])) // Answer: [75, 67, 40, 33]
+console.log(gradingStudents([73, 67, 38, 33])); // Answer: [75, 67, 40, 33]

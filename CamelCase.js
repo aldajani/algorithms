@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const camelcase = (s) => {
   const regex = /[A-Z]/g;
   const matches = s.match(regex);
@@ -5,6 +6,6 @@ const camelcase = (s) => {
     return matches.length + 1;
   }
   return 1;
-}
+};
 
-console.log(camelcase('singleword')) // Answer: 1
+console.log(camelcase('singleword')); // Answer: 1

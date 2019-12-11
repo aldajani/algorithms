@@ -1,16 +1,17 @@
-var numJewelsInStones = function(J, S) {
-  let jewelsHash = {};
+/* eslint-disable no-console */
+const numJewelsInStones = (J, S) => {
+  const jewelsHash = {};
   let counter = 0;
 
-  for (const char of J) {
-    if (!jewelsHash.hasOwnProperty(char)) {
-      jewelsHash[char] = true;
+  for (let i = 0; i < J.length; i += 1) {
+    if (!Object.prototype.hasOwnProperty.call(jewelsHash, J[i])) {
+      jewelsHash[J[i]] = true;
     }
   }
 
-  for (const character of S) {
-    if (jewelsHash.hasOwnProperty(character)) {
-      counter++;
+  for (let i = 0; i < S.length; i += 1) {
+    if (Object.prototype.hasOwnProperty.call(jewelsHash, S[i])) {
+      counter += 1;
     }
   }
 
