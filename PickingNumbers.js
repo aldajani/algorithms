@@ -2,7 +2,6 @@
 const pickingNumbers = (a) => {
   const obj = {};
   let max = 0;
-  a.sort((first, second) => first - second);
   for (let i = 0; i < a.length; i += 1) {
     if (Object.prototype.hasOwnProperty.call(obj, a[i])) {
       obj[a[i]] += 1;
