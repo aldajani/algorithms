@@ -1,12 +1,10 @@
 /* eslint-disable no-console */
 function countingValleys(n, s) {
-
   let valleys = 0;
   let previousAltitude;
   let currentAltitude = 0;
 
   for (let i = 0; i < s.length; i += 1) {
-
     previousAltitude = currentAltitude;
 
     if (s[i] === 'U') currentAltitude += 1;
