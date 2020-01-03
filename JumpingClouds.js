@@ -21,4 +21,4 @@ function jumpingOnClouds(c, k) {
   return energy >= 0 ? energy : 0;
 }
 
-console.log(jumpingOnClouds([0, 0, 1, 0, 0, 1, 1, 0], 2)); // Answer = 96
+console.log(jumpingOnClouds([0, 0, 1, 0, 0, 1, 1, 0], 2)); // Answer = 92
