@@ -12,11 +12,11 @@ const islandPerimeter = (grid) => {
       if (grid[i][j] === 1) {
         if (!up) {
           perimeter += 1;
-        } else if (up[j] !== 1) perimeter += 1;
+        } else if (!up[j]) perimeter += 1;
 
         if (!down) {
           perimeter += 1;
-        } else if (down[j] !== 1) perimeter += 1;
+        } else if (!down[j]) perimeter += 1;
 
         if (!right) perimeter += 1;
 
