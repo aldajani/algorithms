@@ -9,7 +9,7 @@ const islandPerimeter = (grid) => {
       const right = grid[i][j + 1];
       const left = grid[i][j - 1];
 
-      if (grid[i][j] === 1) {
+      if (grid[i][j]) {
         if (!up) {
           perimeter += 1;
         } else if (!up[j]) perimeter += 1;
