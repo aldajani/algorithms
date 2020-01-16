@@ -1,18 +1,16 @@
 /* eslint-disable no-console */
 const canConstruct = (ransomNote, magazine) => {
-  const magazineHash = {};
+  let magazineCopy = magazine.slice(0);
+  let index = 0;
+  let searchChar = ransomNote[index];
 
-  for (let i = 0; i < magazine.length; i += 1) {
-    if (!magazineHash[magazine[i]]) {
-      magazineHash[magazine[i]] = 1;
-    } else {
-      magazineHash[magazine[i]] += 1;
-    }
-  }
+  while (searchChar) {
+    const matchingIndex = magazineCopy.indexOf(searchChar);
 
-  for (let i = 0; i < ransomNote.length; i += 1) {
-    if (magazineHash[ransomNote[i]] > 0) {
-      magazineHash[ransomNote[i]] -= 1;
+    if (matchingIndex !== -1) {
+      magazineCopy = magazineCopy.slice(0, matchingIndex) + magazineCopy.slice(matchingIndex + 1);
+      index += 1;
+      searchChar = ransomNote[index];
     } else {
       return false;
     }
