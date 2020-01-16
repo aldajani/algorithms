@@ -2,8 +2,8 @@
 const findAndReplacePattern = (words, pattern) => {
   const wordsThatMatch = [];
   const order = (string) => {
-    const map = {};
     let counter = 0;
+    const map = {};
     const stringArr = string.split('').map((char) => {
       if (map[char]) {
         return map[char];
