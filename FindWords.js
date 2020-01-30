@@ -27,4 +27,4 @@ const countCharacters = (words, chars) => {
   return lengthSums;
 };
 
-console.log(countCharacters(['hello','world','leetcode'], 'welldonehoneyr')); // Answer = 10
+console.log(countCharacters(['hello', 'world', 'leetcode'], 'welldonehoneyr')); // Answer = 10
