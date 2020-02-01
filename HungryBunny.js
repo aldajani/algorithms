@@ -75,4 +75,4 @@ console.log(veryHungryRabbit([
   [0, 0, 7, 0, 4],
   [4, 6, 3, 4, 9],
   [3, 1, 0, 5, 8],
-])); // Answer =27
+])); // Answer = 27
