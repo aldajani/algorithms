@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const maximumWealth = (accounts) => {
   const customerWealths = [];
   for (let i = 0; i < accounts.length; i += 1) {

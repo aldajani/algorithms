@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const shuffle = (nums, n) => {
   const xArray = nums.slice(0, n);
   const yArray = nums.slice(n);
