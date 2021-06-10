@@ -21,7 +21,7 @@ const numUniqueEmails = (emails) => {
 console.log(numUniqueEmails(['test.email+alex@leetcode.com', 'test.e.mail+bob.cathy@leetcode.com', 'testemail+david@lee.tcode.com'])); // output = 2
 
 
-// alternate implementation using the built in JS set data structure
+// Alternate implementation using the built in JS set data structure
 
 const numUniqueEmails2 = (emails) => {
   const set = new Set();
